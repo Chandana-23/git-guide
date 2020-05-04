@@ -1,1 +1,23 @@
+s=str(input("enter string"))          #Captilize the First letter in a word.
+i=0
+while i<len(s):
+    if i==0:
+        print(s[i].upper(),end='')
+    elif s[i].isspace():
+        print(s[i],end='')
+        j=i+1
+        if j<len(s):
+            print(s[j].upper(),end='')
+            k=j+1
+            while k<len(s):
+                
+                if s[k].isspace():
+                    break
+                k+=1
+        i+=1
+    else:
+        print(s[i],end='')
+    i+=1
+            
+    
 
